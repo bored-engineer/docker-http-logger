@@ -36,8 +36,8 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images:
-          docker.io/boredengineer/ssrf-sink
+        images: |
+          boredengineer/ssrf-sink
           ghcr.io/${{ github.repository }}
         tags: |
           type=ref,event=branch
